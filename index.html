@@ -1,0 +1,602 @@
+<!doctype html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="http://ogp.me/ns/fb#"
+>
+  <head>
+    <title>Mandy Moon</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+
+    <meta
+      property="og:image"
+      content="https://mandymoonmusic.com/biogallery/mandy007.jpg"
+    />
+    <meta property="og:image:width" content="450" />
+    <meta property="og:image:height" content="298" />
+    <meta property="og:title" content="Mandy Moon" />
+    <meta
+      property="og:description"
+      content="Nashville local soul/R&B/Indie Artist."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/header.js" defer></script>
+    <script src="js/bio-gallery.js" defer></script>
+    <script src="js/scroll-reveal.js" defer></script>
+  </head>
+
+  <body>
+    <div id="top-scroll"></div>
+
+    <!-- ============================================================
+         HEADER 
+         - Desktop: title left, nav centered, social right
+         - Mobile: title left, hamburger right (dropdown menu)
+         ============================================================ -->
+    <div id="header">
+      <!-- <div class="header-sections header-left" id="mandy-moon">
+        <a class="site-title" href="#top-scroll" aria-label="Back to top">
+          Mandy Moon
+        </a>
+      </div> -->
+
+      <!-- Desktop nav (centered) -->
+      <nav
+        id="header-menu"
+        class="desktop-nav text-center"
+        aria-label="Primary navigation"
+      >
+        <a href="#top-scroll">Home</a>
+        <a href="#shows-scroll">Shows</a>
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-btn" type="button" aria-haspopup="true">
+            Listen
+          </button>
+
+          <div class="nav-dropdown" role="menu" aria-label="Listen links">
+            <a
+              href="https://www.amazon.com/gp/product/B07RXSGNND"
+              role="menuitem"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Amazon Music</a
+            >
+            <a
+              href="https://open.spotify.com/artist/5Sg56wiFeSevtJXUarIewY?si=KtfCLwioTiqv6JE8qSbDOA"
+              role="menuitem"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Spotify</a
+            >
+            <a
+              href="https://www.youtube.com/channel/UC5WVQgTKUlZzhS6r787dJZg"
+              role="menuitem"
+              target="_blank"
+              rel="noopener noreferrer"
+              >YouTube</a
+            >
+            <a
+              href="https://music.apple.com/us/artist/mandy-moon/416777248"
+              role="menuitem"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Apple Music</a
+            >
+            <a
+              href="https://soundcloud.com/mandymoonmusic"
+              role="menuitem"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SoundCloud</a
+            >
+          </div>
+        </div>
+
+        <a href="#bio-scroll">Bio</a>
+        <a href="#contact-scroll">Contact</a>
+      </nav>
+
+      <!-- Header Social Icons (desktop) -->
+      <div class="header-sections header-social" aria-label="Social links">
+        <a
+          href="https://www.youtube.com/channel/UC5WVQgTKUlZzhS6r787dJZg"
+          class="header-social-link"
+          aria-label="YouTube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="social-icons/youtube.png" alt="" />
+        </a>
+        <a
+          href="https://open.spotify.com/artist/5Sg56wiFeSevtJXUarIewY?si=KtfCLwioTiqv6JE8qSbDOA"
+          class="header-social-link"
+          aria-label="Spotify"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="social-icons/spotify.png" alt="" />
+        </a>
+        <a
+          href="https://music.apple.com/us/artist/mandy-moon/416777248"
+          class="header-social-link"
+          aria-label="Apple Music"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="social-icons/itunes.png" alt="" />
+        </a>
+        <a
+          class="header-social-link"
+          href="https://www.facebook.com/mandymoonmusic"
+          aria-label="Facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="social-icons/facebook.png" alt="" />
+        </a>
+        <a
+          class="header-social-link"
+          href="https://www.instagram.com/mandymoonmusic"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="social-icons/instagram.png" alt="" />
+        </a>
+        <a
+          class="header-social-link"
+          href="https://www.tiktok.com/@mandymoonmusic"
+          aria-label="TikTok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="social-icons/tik-tok.png" alt="" />
+        </a>
+      </div>
+
+      <!-- Mobile nav -->
+      <div class="header-sections header-right" id="hamburger">
+        <button
+          id="hamburger-btn"
+          class="hamburger-btn"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="header-dropdown"
+        >
+          <!-- CSS hamburger icon -->
+          <span class="hamburger-lines" aria-hidden="true"></span>
+        </button>
+
+        <div id="header-dropdown" class="header-dropdown" role="menu">
+          <a href="#top-scroll" role="menuitem">Home</a>
+          <a href="#shows-scroll" role="menuitem">Shows</a>
+
+          <button
+            type="button"
+            class="mobile-submenu-toggle"
+            aria-expanded="false"
+            aria-controls="listen-submenu"
+          >
+            Listen
+          </button>
+
+          <div id="listen-submenu" class="mobile-submenu" role="menu">
+            <a href="#" role="menuitem">Amazon Music</a>
+            <a href="#" role="menuitem">Spotify</a>
+            <a href="#" role="menuitem">YouTube</a>
+            <a href="#" role="menuitem">Apple Music</a>
+            <a href="#" role="menuitem">SoundCloud</a>
+          </div>
+
+          <a href="#bio-scroll" role="menuitem">Bio</a>
+          <a href="#contact-scroll" role="menuitem">Contact</a>
+
+          <!-- Social icons: ONLY show in the mobile dropdown (header hides them on mobile via CSS) -->
+          <div class="mobile-social" aria-label="Social links">
+            <a
+              class="header-social-link"
+              href="https://www.youtube.com/channel/UC5WVQgTKUlZzhS6r787dJZg"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="social-icons/youtube.png" alt="" />
+            </a>
+            <a
+              class="header-social-link"
+              href="https://open.spotify.com/artist/5Sg56wiFeSevtJXUarIewY?si=KtfCLwioTiqv6JE8qSbDOA"
+              aria-label="Spotify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="social-icons/spotify.png" alt="" />
+            </a>
+            <a
+              class="header-social-link"
+              href="https://music.apple.com/us/artist/mandy-moon/416777248"
+              aria-label="Apple Music"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="social-icons/itunes.png" alt="" />
+            </a>
+            <a
+              class="header-social-link"
+              href="https://www.facebook.com/mandymoonmusic"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="social-icons/facebook.png" alt="" />
+            </a>
+            <a
+              class="header-social-link"
+              href="https://www.instagram.com/mandymoonmusic"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="social-icons/instagram.png" alt="" />
+            </a>
+            <a
+              class="header-social-link"
+              href="https://www.tiktok.com/@mandymoonmusic"
+              aria-label="TikTok"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="social-icons/tik-tok.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <!-- Hero -->
+      <section id="hero" aria-label="Hero">
+        <div class="hero-inner">
+          <img class="hero-logo" src="images/logoWhite.png" alt="Mandy Moon" />
+        </div>
+      </section>
+
+      <!-- Videos -->
+      <section class="video-section reveal" aria-label="Videos">
+        <div class="video-wrap">
+          <div class="responsive-16x9">
+            <iframe
+              referrerpolicy="strict-origin-when-cross-origin"
+              class="video-embed"
+              src="https://www.youtube-nocookie.com/embed/y_hsAD3_R8g"
+              title="Love Myself - Official Music Video"
+              loading="lazy"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="video-wrap">
+          <div class="responsive-16x9">
+            <iframe
+              referrerpolicy="strict-origin-when-cross-origin"
+              class="video-embed"
+              src="https://www.youtube-nocookie.com/embed/ZGB_Zen7CzI"
+              title="Drive- Official Music Video"
+              frameborder="0"
+              loading="lazy"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spotify Embed -->
+      <div class="spotify-container reveal" aria-label="Spotify player">
+        <iframe
+          data-testid="embed-iframe"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/artist/5Sg56wiFeSevtJXUarIewY?utm_source=generator"
+          width="50%"
+          height="400"
+          frameborder="0"
+          allowfullscreen=""
+          allow="
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            fullscreen;
+            picture-in-picture;
+          "
+          loading="lazy"
+        ></iframe>
+      </div>
+      <!-- Shows -->
+      <section id="shows" class="reveal" aria-label="Shows">
+        <div id="shows-scroll"></div>
+
+        <!-- NOTE: was id="showcase" and id="showcase-info" (repeated IDs) -->
+        <div class="section-card showcase">
+          <h2 class="mobile-showcase-title nowrap text-center">
+            Shows<br id="break1" />
+          </h2>
+
+          <div class="showcase-info showcase-info-column">
+            <h2 class="nowrap text-center">Shows<br id="break2" /></h2>
+
+            <!-- <p class="showcase-subtitle">
+              2/27/25 - 3/8/25 - BSN Theatre - Mt. Juliet, TN
+              <a href="#" id="ticket-link" class="btn btn-sm">Buy Tickets</a>
+            </p> -->
+            <p>No Upcoming Shows</p>
+            <br />
+          </div>
+        </div>
+      </section>
+
+      <!-- Singles -->
+      <section id="singles" class="reveal" aria-label="Singles">
+        <div id="singles-scroll"></div>
+
+        <!-- Love Myself -->
+        <div class="section-card showcase">
+          <h2 class="mobile-showcase-title nowrap text-center">
+            Love Myself<br id="break1" />
+          </h2>
+
+          <div class="showcase-image">
+            <img src="images/LM_SingleCover.jpg" alt="Love Myself cover" />
+          </div>
+
+          <div class="showcase-info showcase-info-column">
+            <h2 class="nowrap text-center">Love Myself<br id="break2" /></h2>
+
+            <a
+              class="btn btn-sm"
+              href="https://music.apple.com/us/album/love-myself-single/1742891881"
+              target="_blank"
+              rel="noopener"
+            >
+              Buy Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Same Page -->
+        <div class="section-card showcase">
+          <h2 class="mobile-showcase-title nowrap text-center">
+            Same Page<br id="break1" />
+          </h2>
+
+          <div class="showcase-image">
+            <img src="images/SamePage_Cover.png" alt="Same Page cover" />
+          </div>
+
+          <div class="showcase-info showcase-info-column">
+            <h2 class="nowrap text-center">Same Page<br id="break2" /></h2>
+
+            <a
+              class="btn btn-sm"
+              href="https://music.apple.com/us/album/same-page-single/1735069758"
+              target="_blank"
+              rel="noopener"
+            >
+              Buy Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Drive -->
+        <div class="section-card showcase">
+          <h2 class="mobile-showcase-title nowrap text-center">
+            Drive<br id="break1" />
+          </h2>
+
+          <div class="showcase-image">
+            <img src="images/marathonCar1.png" alt="Drive cover" />
+          </div>
+
+          <div class="showcase-info showcase-info-column">
+            <h2 class="nowrap text-center">Drive<br id="break2" /></h2>
+
+            <a
+              class="btn btn-sm"
+              href="https://music.apple.com/us/album/drive-single/1647674792"
+              target="_blank"
+              rel="noopener"
+            >
+              Buy Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bio -->
+      <section id="bio" class="reveal section-card" aria-label="Bio">
+        <div id="bio-scroll"></div>
+        <h2>Meet Mandy</h2>
+
+        <p class="bio-text">
+          <img
+            class="bio-image"
+            src="images/MandyMoonBio.png"
+            alt="Mandy Moon"
+          />
+          Mandy Moon emerged as a singer-songwriter project by Mandy Wright in
+          New Orleans in 2004. Her musical style, influenced by soul and rhythm
+          & blues, was shaped by the vibrant music scene of the city. Born in
+          Bangkok, Thailand, Mandy moved to the United States at a young age,
+          drawing inspiration from places she’s called home. Her musical journey
+          began organically, starting with singing at age 6 and learning guitar
+          at 15. She graduated from Florida Atlantic University in 2013 with a
+          Bachelor's degree in Music, specializing in Studio Engineering and
+          Voice. As a versatile and trained vocalist, Mandy effortlessly crosses
+          into the genres of R&B, Pop, Jazz, and Soul. Her music is soulful,
+          driven, authentic, and emotional, aiming to help understand and
+          process the many spectrums of the human experience. No subject is off
+          limits to write or sing about. Mandy spent several years in the South
+          Florida music scene with her band, releasing the single "Why Can’t I
+          Breathe" in December 2015, which continues to resonate with fans. In
+          search of new creative challenges, she moved to Nashville in the
+          summer of 2016 to further her music career. Just before her move, she
+          debuted her single "Lie To Me" on Balcony TV Miami in May 2016. After
+          a few years in Music City, Mandy successfully raised $4,000 through
+          IndieGoGo to record and release her latest EP, "Passing Through," in
+          2019. Her single "Quarantine Song," produced and recorded remotely
+          from her home studio and a producer's studio in Florida, was released
+          in the summer of 2020. Currently based in Nashville, Tennessee, Mandy
+          continues to create music and perform with her band, while also
+          playing at private and corporate events. Her new single "Love Myself"
+          is out now, with more anticipated releases arriving in 2024.
+        </p>
+
+        <div id="hidden-gallery">
+          <img index="0" src="biogallery/mandy2.jpg" alt="Mandy photo" />
+          <img index="1" src="biogallery/mandy3.jpg" alt="Mandy photo" />
+          <img index="2" src="biogallery/mandy4.jpg" alt="Mandy photo" />
+          <img index="3" src="biogallery/mandy5.jpg" alt="Mandy photo" />
+        </div>
+
+        <div id="bio-gallery">
+          <span id="gallery-left" aria-hidden="true"></span>
+          <span id="gallery-right" aria-hidden="true"></span>
+        </div>
+
+        <div id="scroll-arrows">
+          <span
+            id="scroll-left"
+            class="gallery-scroller"
+            role="button"
+            tabindex="0"
+            >&lt;</span
+          >
+          <span
+            id="scroll-right"
+            class="gallery-scroller"
+            role="button"
+            tabindex="0"
+            >&gt;</span
+          >
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="reveal" aria-label="Contact">
+        <div id="contact-scroll"></div>
+
+        <!-- NOTE: was id="showcase" and id="showcase-info" (repeated IDs) -->
+        <div class="section-card showcase">
+          <h2 class="mobile-showcase-title nowrap text-center">
+            Contact<br id="break1" />
+          </h2>
+
+          <div class="showcase-info showcase-info-column">
+            <h2 class="nowrap text-center">Contact<br id="break2" /></h2>
+
+            <form class="contact-form" action="#" method="post">
+              <label for="cf-name">Name</label>
+              <input
+                id="cf-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              />
+
+              <label for="cf-email">Email</label>
+              <input
+                id="cf-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" required />
+
+              <label for="cf-message">Message</label>
+              <textarea
+                id="cf-message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div id="footer-buffer"></div>
+
+      <footer id="footer" class="reveal section-card" aria-label="Footer">
+        <div id="social-icons">
+          <a
+            href="https://www.youtube.com/channel/UC5WVQgTKUlZzhS6r787dJZg"
+            target="_blank"
+            rel="noopener"
+            ><img src="social-icons/youtube.png" alt="YouTube"
+          /></a>
+          <a
+            href="https://open.spotify.com/artist/5Sg56wiFeSevtJXUarIewY"
+            target="_blank"
+            rel="noopener"
+            ><img src="social-icons/spotify.png" alt="Spotify"
+          /></a>
+          <a
+            href="https://music.apple.com/us/artist/mandy-moon/416777248"
+            target="_blank"
+            rel="noopener"
+            ><img src="social-icons/itunes.png" alt="Apple Music"
+          /></a>
+          <a
+            href="https://www.facebook.com/mandymoonmusic"
+            target="_blank"
+            rel="noopener"
+            ><img src="social-icons/facebook.png" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/mandymoonmusic"
+            target="_blank"
+            rel="noopener"
+            ><img src="social-icons/instagram.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.tiktok.com/@mandymoonmusic"
+            target="_blank"
+            rel="noopener"
+            ><img src="social-icons/tik-tok.png" alt="TikTok"
+          /></a>
+        </div>
+      </footer>
+
+      <br /><br />
+    </div>
+  </body>
+</html>
