@@ -28,6 +28,7 @@
     <script src="js/header.js" defer></script>
     <script src="js/bio-gallery.js" defer></script>
     <script src="js/scroll-reveal.js" defer></script>
+    <script src="js/contact.js" defer></script>
   </head>
 
   <body>
@@ -518,6 +519,25 @@
             <h2 class="nowrap text-center">Contact<br id="break2" /></h2>
 
             <form class="contact-form" action="#" method="post">
+              <!-- Honeypot field (spam bots fill this; humans never should) -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="cf-website">Website</label>
+                <input
+                  id="cf-website"
+                  name="website"
+                  type="text"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+
+              <!-- Status message area for success/error -->
+              <p
+                id="contact-status"
+                class="contact-status"
+                aria-live="polite"
+              ></p>
+
               <label for="cf-name">Name</label>
               <input
                 id="cf-name"
