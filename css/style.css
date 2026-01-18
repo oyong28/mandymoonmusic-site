@@ -1047,6 +1047,22 @@ div#social-icons a img {
 .contact-status.is-error {
   font-weight: 600;
 }
+/* ============================================================
+   Contact Form — Honeypot (anti-spam)
+   - Visually hidden
+   - Removed from layout
+   - Still readable by bots
+   ============================================================ */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
 
 /* ============================================================
    End of style.css
